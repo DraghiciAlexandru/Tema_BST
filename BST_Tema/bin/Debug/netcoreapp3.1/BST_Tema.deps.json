@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BST_Tema/1.0.0": {
+        "runtime": {
+          "BST_Tema.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BST_Tema/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

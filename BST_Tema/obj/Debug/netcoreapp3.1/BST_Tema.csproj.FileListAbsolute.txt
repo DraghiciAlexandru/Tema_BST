@@ -1,0 +1,11 @@
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\bin\Debug\netcoreapp3.1\BST_Tema.exe
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\bin\Debug\netcoreapp3.1\BST_Tema.deps.json
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\bin\Debug\netcoreapp3.1\BST_Tema.runtimeconfig.json
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\bin\Debug\netcoreapp3.1\BST_Tema.runtimeconfig.dev.json
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\bin\Debug\netcoreapp3.1\BST_Tema.dll
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\bin\Debug\netcoreapp3.1\BST_Tema.pdb
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\obj\Debug\netcoreapp3.1\BST_Tema.csprojAssemblyReference.cache
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\obj\Debug\netcoreapp3.1\BST_Tema.AssemblyInfoInputs.cache
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\obj\Debug\netcoreapp3.1\BST_Tema.AssemblyInfo.cs
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\obj\Debug\netcoreapp3.1\BST_Tema.dll
+D:\C#\ConsoleApps\OOP\StructuriDeDateGenerice\BST_Tema\BST_Tema\obj\Debug\netcoreapp3.1\BST_Tema.pdb
