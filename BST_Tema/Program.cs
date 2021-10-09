@@ -8,17 +8,18 @@ namespace BST_Tema
         {
             BST<int> bst = new BST<int>();
 
-            bst.insert(8);
-            bst.insert(3);
-            bst.insert(1);
-            bst.insert(6);
-            bst.insert(4);
-            bst.insert(7);
+            bst.insert(12);
             bst.insert(10);
-            bst.insert(14);
-            bst.insert(13);
+            bst.insert(18);
+            bst.insert(8);
+            bst.insert(11);
+            bst.insert(15);
+            bst.insert(20);
+            bst.insert(9);
+            bst.insert(16);
+            bst.insert(17);
 
-
+            Prob7Corectare prob7Corectare = new Prob7Corectare(bst);
         }
     }
 }
