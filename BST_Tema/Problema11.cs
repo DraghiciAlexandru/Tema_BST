@@ -20,8 +20,10 @@ namespace BST_Tema
             if (node.Data == x)
                 node.Data = y;
 
-            findReplace(node.Left, x, y);
-            findReplace(node.Right, x, y);
+            if (node.Data.CompareTo(x) == 1)
+                findReplace(node.Left, x, y);
+            else
+                findReplace(node.Right, x, y);
         }
 
     }

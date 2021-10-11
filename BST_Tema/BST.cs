@@ -115,7 +115,11 @@ namespace BST_Tema
             {
                 return;
             }
-            
+
+            postorder(node.Left);
+            postorder(node.Right);
+
+            Console.WriteLine(node.Data);
         }
 
         public int height(TreeNode<T> node)
@@ -260,8 +264,6 @@ namespace BST_Tema
             }
             return start;
         }
-
-
 
     }
 }
