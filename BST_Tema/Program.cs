@@ -19,8 +19,8 @@ namespace BST_Tema
             bst.insert(16);
             bst.insert(17);
 
+            Problema21 problema21 = new Problema21(bst);
 
-            Problema22 prob7Corectare = new Problema22(bst);
         }
     }
 }

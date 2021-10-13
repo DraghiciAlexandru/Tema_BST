@@ -12,25 +12,45 @@ namespace BST_Tema
         {
             this.bst = bst;
 
-            inserareDubluFrunza(bst.Root);
+            inserareDubluFrunza(frunze(bst.Root));
 
             bst.preorder(bst.Root);
         }
 
-        public void inserareDubluFrunza(TreeNode<int> node)
+        public List<TreeNode<int>> frunze(TreeNode<int> node)
         {
-            if (node == null)
-                return;
+            Queue<TreeNode<int>> queue = new Queue<TreeNode<int>>();
+            List<TreeNode<int>> list = new List<TreeNode<int>>();
 
-            if (node.Left == null && node.Right == null)
+            if (node != null)
+                queue.Enqueue(node);
+
+            while(queue.Count>0)
             {
-                if (bst.find(bst.Root, node.Data * 2) == null) 
-                    bst.insert(node.Data * 2);
-                return;
+                if(queue.Peek().Left!=null)
+                {
+                    queue.Enqueue(queue.Peek().Left);
+                }
+                if (queue.Peek().Right != null)
+                {
+                    queue.Enqueue(queue.Peek().Right);
+                }
+
+                if (queue.Peek().Left == null && queue.Peek().Right == null)
+                    list.Add(queue.Peek());
+
+                queue.Dequeue();
             }
 
-            inserareDubluFrunza(node.Left);
-            inserareDubluFrunza(node.Right);
+            return list;
+        }
+
+        public void inserareDubluFrunza(List<TreeNode<int>> frunze)
+        {
+            foreach (TreeNode<int> x in frunze) 
+            {
+                bst.insert(x.Data * 2);
+            }
         }
 
     }

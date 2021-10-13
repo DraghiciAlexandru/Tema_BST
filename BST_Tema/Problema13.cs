@@ -6,16 +6,9 @@ namespace BST_Tema
 {
     class Problema13
     {
-
-        /*
-         
-        problema 12
-
-        inorder?
-
-        pentru arbori simpli?
-         
-         */
-
+        public Problema13(BST<int> bst)
+        {
+            Console.WriteLine(bst.simetric(bst.Root.Left, bst.Root.Right));
+        }
     }
 }

@@ -265,5 +265,77 @@ namespace BST_Tema
             return start;
         }
 
+        public bool simetric(TreeNode<T> node1, TreeNode<T> node2)
+        {
+            Queue<TreeNode<T>> queue1 = new Queue<TreeNode<T>>();
+            Queue<TreeNode<T>> queue2 = new Queue<TreeNode<T>>();
+
+            if (node1 != null)
+                queue1.Enqueue(node1);
+            if (node2 != null)
+                queue2.Enqueue(node2);
+
+            while (queue1.Count > 0 && queue2.Count > 0)
+            {
+                if (queue1.Peek().Left != null && queue2.Peek().Right != null)
+                {
+                    queue1.Enqueue(queue1.Peek().Left);
+                    queue2.Enqueue(queue2.Peek().Right);
+                }
+                else if ((queue1.Peek().Left != null && queue2.Peek().Right == null) || (queue1.Peek().Left == null && queue2.Peek().Right != null))
+                {
+                    return false;
+                }
+
+                if (queue1.Peek().Right != null && queue2.Peek().Left != null)
+                {
+                    queue1.Enqueue(queue1.Peek().Right);
+                    queue2.Enqueue(queue2.Peek().Left);
+                }
+                else if ((queue1.Peek().Right != null && queue2.Peek().Left == null) || (queue1.Peek().Right == null && queue2.Peek().Left != null))
+                {
+                    return false;
+                }
+
+
+                queue1.Dequeue();
+                queue2.Dequeue();
+            }
+
+            if (queue1.Count == 0 && queue2.Count == 0)
+                return true;
+            return false;
+        }
+
+        public bool isCorect(TreeNode<T> node)
+        {
+            Queue<TreeNode<T>> queue = new Queue<TreeNode<T>>();
+
+            if (node != null)
+                queue.Enqueue(node);
+
+            while (queue.Count > 0)
+            {
+                if (queue.Peek().Left != null)
+                {
+                    if (queue.Peek().Left.Data.CompareTo(queue.Peek().Data) != -1)
+                        return false;
+                    else
+                    {
+                        queue.Enqueue(queue.Peek().Left);
+                    }
+
+                    if (queue.Peek().Right.Data.CompareTo(queue.Peek().Data) != 1)
+                        return false;
+                    else
+                    {
+                        queue.Enqueue(queue.Peek().Right);
+                    }
+                }
+                queue.Dequeue();
+            }
+
+            return true;
+        }
     }
 }
